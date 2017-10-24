@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		98CFD0511F9FC17D00609052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CFD0501F9FC17D00609052 /* AppDelegate.swift */; };
-		98CFD0531F9FC17D00609052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CFD0521F9FC17D00609052 /* ViewController.swift */; };
 		98CFD0561F9FC17D00609052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CFD0541F9FC17D00609052 /* Main.storyboard */; };
 		98CFD0581F9FC17D00609052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CFD0571F9FC17D00609052 /* Assets.xcassets */; };
 		98CFD05B1F9FC17D00609052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CFD0591F9FC17D00609052 /* LaunchScreen.storyboard */; };
+		98CFD0651F9FC1BB00609052 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CFD0641F9FC1BB00609052 /* MainViewController.swift */; };
+		98CFD0671F9FC1EB00609052 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CFD0661F9FC1EB00609052 /* PolygonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98CFD04D1F9FC17D00609052 /* AnimatedPolygon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedPolygon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CFD0501F9FC17D00609052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98CFD0521F9FC17D00609052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98CFD0551F9FC17D00609052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98CFD0571F9FC17D00609052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CFD05A1F9FC17D00609052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98CFD05C1F9FC17D00609052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CFD0641F9FC1BB00609052 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		98CFD0661F9FC1EB00609052 /* PolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		98CFD04F1F9FC17D00609052 /* AnimatedPolygon */ = {
 			isa = PBXGroup;
 			children = (
-				98CFD0501F9FC17D00609052 /* AppDelegate.swift */,
-				98CFD0521F9FC17D00609052 /* ViewController.swift */,
-				98CFD0541F9FC17D00609052 /* Main.storyboard */,
-				98CFD0571F9FC17D00609052 /* Assets.xcassets */,
-				98CFD0591F9FC17D00609052 /* LaunchScreen.storyboard */,
+				98CFD0621F9FC19000609052 /* Source */,
 				98CFD05C1F9FC17D00609052 /* Info.plist */,
+				98CFD0591F9FC17D00609052 /* LaunchScreen.storyboard */,
+				98CFD0571F9FC17D00609052 /* Assets.xcassets */,
+				98CFD0541F9FC17D00609052 /* Main.storyboard */,
 			);
 			path = AnimatedPolygon;
+			sourceTree = "<group>";
+		};
+		98CFD0621F9FC19000609052 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				98CFD0501F9FC17D00609052 /* AppDelegate.swift */,
+				98CFD0641F9FC1BB00609052 /* MainViewController.swift */,
+				98CFD0661F9FC1EB00609052 /* PolygonView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CFD0531F9FC17D00609052 /* ViewController.swift in Sources */,
 				98CFD0511F9FC17D00609052 /* AppDelegate.swift in Sources */,
+				98CFD0671F9FC1EB00609052 /* PolygonView.swift in Sources */,
+				98CFD0651F9FC1BB00609052 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
