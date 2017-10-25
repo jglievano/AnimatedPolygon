@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
     }
     timer = Timer.scheduledTimer(withTimeInterval: 0.001, repeats: true, block: { (timer) in
       self.drawView.fillPct -= 0.001
-      self.drawView.setNeedsDisplay()
     })
   }
 
