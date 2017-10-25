@@ -70,14 +70,14 @@ class PolygonView: UIView {
 
     let topAngle = (90 * CGFloat.pi / 180) - angle // the * PI / 180 is because we manage radians
     let missingY = height * 0.5 - y // y fill of bottom part is unfill of top part
-    let missingX = missingY / atan(topAngle)
+    let missingX = missingY / tan(topAngle)
     if missingX > width / 2 {
       return
     }
     let bottomPath = UIBezierPath()
     bottomPath.move(to: CGPoint(x: 0, y: height))
     bottomPath.addLine(to: CGPoint(x: missingX, y: height - missingY))
-    bottomPath.addLine(to: CGPoint(x: width - missingX, y: height - missingY))
+    bottomPath.addLine(to: CGPoint(x: width - missingX  , y: height - missingY))
     bottomPath.addLine(to: CGPoint(x: width, y: height))
     bottomPath.close()
 
